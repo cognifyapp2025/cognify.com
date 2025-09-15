@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="fil">
+<head>
+  <meta charset="utf-8">
+  <title>Cognify • Privacy Policy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy Policy for the Cognify mobile app.">
+  <link rel="canonical" href="https://yourname.github.io/privacy.html">
+  <!-- NEW: use your app logo for favicon and social preview -->
+  <link rel="icon" href="applogo.png" sizes="32x32" type="image/png">
+  <meta property="og:image" content="applogo.png">
+  <style>
+    :root{
+      --brand:#4F46E5; --brand-700:#4338CA; --accent:#14B8A6;
+      --bg:#1c4494; --surface:#0F172A; --text:#E5E7EB; --muted:#94A3B8;
+      --link:#93C5FD; --border:rgba(255,255,255,.08);
+      --shadow:0 10px 30px rgba(2,6,23,.45); --radius:16px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0}
+    img{max-width:100%;display:block}
+    a{color:var(--link);text-decoration:none}
+    a:hover{text-decoration:underline}
+    body{
+      background: radial-gradient(1200px 700px at 10% -10%, rgba(79,70,229,.18), transparent),
+                  radial-gradient(1000px 600px at 110% 10%, rgba(20,184,166,.15), transparent),
+                  var(--bg);
+      color:var(--text);
+      font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,Ubuntu,Arial,sans-serif;
+      padding:0 16px 48px;
+    }
+    .wrap{max-width:920px;margin:0 auto}
+    header{
+      margin:24px auto 16px;
+      background:linear-gradient(135deg,var(--brand) 0%,var(--brand-700) 60%,rgba(20,184,166,.9) 120%);
+      border:1px solid var(--border);
+      box-shadow:var(--shadow);
+      border-radius:var(--radius);
+      padding:18px 20px;
+      position:sticky; top:12px; z-index:2;
+    }
+    .brand{display:flex;align-items:center;gap:12px;margin:0 0 8px 0}
+    /* NEW: real image logo styling */
+    .logo{
+      width:28px;height:28px;border-radius:8px;object-fit:cover;
+      box-shadow:0 4px 18px rgba(2,6,23,.35), inset 0 0 0 1px rgba(255,255,255,.22);
+    }
+    .brand h1{font-size:1.15rem;margin:0;font-weight:700;letter-spacing:.2px}
+    nav{display:flex;flex-wrap:wrap;gap:10px}
+    nav a{
+      font-size:.92rem; padding:6px 10px; border-radius:10px;
+      background:rgba(255,255,255,.06); border:1px solid var(--border)
+    }
+    main{
+      margin-top:16px;
+      background:linear-gradient(180deg,rgba(255,255,255,.02),transparent 120%), var(--surface);
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      padding:28px 22px;
+    }
+    h2{margin-top:28px;font-size:1.35rem;letter-spacing:.2px}
+    .meta{color:var(--muted);font-size:.95rem;margin:6px 0 14px}
+    ul{padding-left:18px}
+    .callout{
+      border:1px dashed var(--border); border-radius:12px;
+      padding:14px 14px; background:rgba(20,184,166,.06); margin:12px 0
+    }
+    footer{margin-top:22px;color:var(--muted);font-size:.95rem}
+    .grid{display:grid; gap:14px; grid-template-columns:repeat(2,minmax(0,1fr))}
+    @media (max-width:720px){ .grid{grid-template-columns:1fr} }
+    code,pre{background:rgba(255,255,255,.06);border:1px solid var(--border);border-radius:8px}
+    code{padding:1px 6px}
+    pre{padding:10px 12px;overflow:auto}
+    .badge{
+      display:inline-block;padding:2px 8px;border-radius:999px;
+      border:1px solid var(--border);background:rgba(79,70,229,.18);font-size:.8rem
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <!-- NEW: replace gradient box with your actual app logo file -->
+        <img class="logo" src="applogo.png" alt="Cognify logo" width="28" height="28">
+        <h1>Cognify • Privacy Policy</h1>
+      </div>
+      <nav aria-label="Mga seksyon">
+        <a href="#data-we-collect">Data</a>
+        <a href="#how-we-use">Paggamit</a>
+        <a href="#sharing">Pagbahagi</a>
+        <a href="#retention">Retention</a>
+        <a href="#security">Seguridad</a>
+        <a href="#children">Menor de edad</a>
+        <a href="#international">International</a>
+        <a href="#rights">Karapatan</a>
+        <a href="#data-deletion">Deletion</a>
+        <a href="#providers">Providers</a>
+        <a href="#changes">Pagbabago</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <p class="meta">Huling update: 15 September 2025 · Saklaw: Android app “Cognify”.</p>
+
+      <div class="callout">
+        <strong>Buod:</strong> Gumagamit kami ng Firebase para sa auth at storage ng app data. Hindi kami nagbebenta ng personal data. May opsyon kang mag-request ng deletion anumang oras.
+      </div>
+
+      <h2 id="data-we-collect">Anong data ang kinokolekta</h2>
+      <div class="grid">
+        <div>
+          <ul>
+            <li><strong>Account/Auth</strong>: pangalan, email, at identifiers mula sa Facebook, Google, o Email/Password.</li>
+            <li><strong>Profile/App</strong>: edad, settings, progreso ng mga laro, baseline at level stats.</li>
+            <li><strong>Device basics</strong>: modelo at Android version para sa compatibility at debugging.</li>
+          </ul>
+        </div>
+        <div class="callout">
+          <span class="badge">Infra</span>
+          <p>Ang data ay dadaan at i-store sa <strong>Firebase Authentication</strong> at <strong>Cloud Firestore</strong>. Para sa third-party sign-in, gagamitin ang <strong>Facebook Login</strong> at <strong>Google Sign-In</strong>.</p>
+        </div>
+      </div>
+
+      <h2 id="how-we-use">Paano namin ginagamit ang data</h2>
+      <ul>
+        <li>Para sa secure na authentication at session management.</li>
+        <li>Para i-save ang progreso, levels, at settings.</li>
+        <li>Para pagandahin ang reliability at performance ng app.</li>
+      </ul>
+
+      <h2 id="sharing">Pagbahagi ng data</h2>
+      <ul>
+        <li><strong>Service providers</strong>: Firebase (Google) para sa auth at database.</li>
+        <li><strong>Sign-in providers</strong>: Facebook at Google para sa authentication.</li>
+        <li><strong>Legal</strong>: kapag kailangan ayon sa batas.</li>
+      </ul>
+
+      <h2 id="retention">Pagpapanatili (Retention)</h2>
+      <p>Itinatago namin ang data habang aktibo ang iyong account at kinakailangan para sa mga layunin sa itaas. Maaari mong hilinging burahin ang account at data anumang oras.</p>
+
+      <h2 id="security">Seguridad</h2>
+      <p>Umaasa kami sa industry-standard security ng Firebase. Walang system na 100% secure. Panatilihin ang seguridad ng iyong device at credentials.</p>
+
+      <h2 id="children">Mga menor de edad</h2>
+      <p>Ang app ay para sa general audience. Kung may data ng menor na naipadala nang walang pahintulot, makipag-ugnayan para sa deletion.</p>
+
+      <h2 id="international">International transfers</h2>
+      <p>Maaaring ma-process ang data sa labas ng Pilipinas depende sa lokasyon ng mga server ng aming service providers.</p>
+
+      <h2 id="rights">Iyong mga karapatan</h2>
+      <ul>
+        <li>Access at kopya ng iyong data</li>
+        <li>Pagwawasto ng mali o kulang</li>
+        <li>Pag-delete ng account at kaugnay na data</li>
+      </ul>
+
+      <h2 id="data-deletion">Data Deletion</h2>
+      <p>Kompletong gabay: <a href="user-data-deletion.html">User Data Deletion Instructions</a>. Maaari ka ring gumamit ng email template doon.</p>
+
+      <h2 id="providers">Mga third-party provider</h2>
+      <ul>
+        <li><a href="https://firebase.google.com/support/privacy" rel="noopener">Firebase Privacy</a></li>
+        <li><a href="https://www.facebook.com/privacy/policy" rel="noopener">Facebook Privacy</a></li>
+        <li><a href="https://policies.google.com/privacy" rel="noopener">Google Privacy</a></li>
+      </ul>
+
+      <h2 id="changes">Mga pagbabago sa patakaran</h2>
+      <p>Ipo-post namin ang updates dito. Tingnan ang “Huling update” sa itaas.</p>
+
+      <h2 id="contact">Contact</h2>
+      <!-- NEW: fixed the email link -->
+      <p>Para sa data requests, mag-email sa
+        <a href="mailto:cognifyapp2025@gmail.com">cognifyapp2025@gmail.com</a>.
+      </p>
+
+      <footer>© 2025 Cognify. Impormasyon pang-pangkalahatan, hindi legal advice.</footer>
+    </main>
+  </div>
+</body>
+</html>
