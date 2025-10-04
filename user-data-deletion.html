@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="fil">
+<head>
+  <meta charset="utf-8">
+  <title>Cognify • User Data Deletion Instructions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="How to request deletion of your Cognify account and data.">
+  <link rel="canonical" href="https://yourname.github.io/user-data-deletion.html">
+  <link rel="icon" href="applogo.png" sizes="32x32" type="image/png">
+  <meta property="og:image" content="applogo.png">
+  <style>
+    :root{
+      --brand:#4F46E5; --brand-700:#4338CA; --accent:#14B8A6;
+      --bg:#1c4494; --surface:#0F172A; --text:#E5E7EB; --muted:#94A3B8;
+      --link:#93C5FD; --border:rgba(255,255,255,.08);
+      --shadow:0 10px 30px rgba(2,6,23,.45); --radius:16px;
+    }
+    *{box-sizing:border-box} html,body{margin:0;padding:0}
+    a{color:var(--link);text-decoration:none} a:hover{text-decoration:underline}
+    body{
+      background: radial-gradient(1200px 700px at 10% -10%, rgba(79,70,229,.18), transparent),
+                  radial-gradient(1000px 600px at 110% 10%, rgba(20,184,166,.15), transparent),
+                  var(--bg);
+      color:var(--text);
+      font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,Ubuntu,Arial,sans-serif;
+      padding:0 16px 48px;
+    }
+    .wrap{max-width:920px;margin:0 auto}
+    header{
+      margin:24px auto 16px;
+      background:linear-gradient(135deg,var(--brand) 0%,var(--brand-700) 60%,rgba(20,184,166,.9) 120%);
+      border:1px solid var(--border);box-shadow:var(--shadow);
+      border-radius:var(--radius);padding:18px 20px;position:sticky;top:12px;z-index:2
+    }
+    .brand{display:flex;align-items:center;gap:12px;margin:0 0 8px 0}
+    /* real image logo */
+    .logo{width:28px;height:28px;border-radius:8px;object-fit:cover;
+      box-shadow:0 4px 18px rgba(2,6,23,.35), inset 0 0 0 1px rgba(255,255,255,.22)}
+    .brand h1{font-size:1.15rem;margin:0;font-weight:700;letter-spacing:.2px}
+    main{
+      margin-top:16px;background:linear-gradient(180deg,rgba(255,255,255,.02),transparent 120%), var(--surface);
+      border:1px solid var(--border);border-radius:var(--radius);
+      box-shadow:var(--shadow);padding:28px 22px
+    }
+    h2{margin-top:28px;font-size:1.3rem}
+    .meta{color:var(--muted);font-size:.95rem;margin:6px 0 14px}
+    ol{padding-left:20px}
+    .card{border:1px solid var(--border);border-radius:12px;padding:16px;background:rgba(255,255,255,.03);margin:12px 0}
+    .grid{display:grid;gap:14px;grid-template-columns:repeat(2,minmax(0,1fr))}
+    @media (max-width:720px){.grid{grid-template-columns:1fr}}
+    pre,code{background:rgba(255,255,255,.06);border:1px solid var(--border);border-radius:8px}
+    pre{padding:10px 12px;overflow:auto}
+    .note{font-size:.95rem;color:var(--muted)}
+    .badge{
+      display:inline-block;padding:2px 8px;border-radius:999px;
+      border:1px solid var(--border);background:rgba(20,184,166,.18);font-size:.8rem
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <img class="logo" src="applogo.png" alt="Cognify logo" width="28" height="28">
+        <h1>Cognify • User Data Deletion Instructions</h1>
+      </div>
+    </header>
+
+    <main>
+      <p class="meta">Huling update: 15 September 2025</p>
+
+      <div class="card">
+        <span class="badge">Layunin</span>
+        <p>Ang pahinang ito ay tumutupad sa Facebook “User Data Deletion” requirement at nagsisilbing gabay ng lahat ng Cognify users para mag-request ng pagbura ng data.</p>
+      </div>
+
+      <h2 id="option-a">Opsyon A: In-app “Delete Account” (kung available)</h2>
+      <ol>
+        <li>Buksan ang Cognify app.</li>
+        <li>Pumunta sa <strong>Settings &gt; Account</strong>.</li>
+        <li>Piliin ang <strong>Delete Account</strong> at sundin ang prompt.</li>
+      </ol>
+      <p class="note">Resulta: Ide-delete namin ang account at nauugnay na data sa production database.</p>
+
+      <h2 id="option-b">Opsyon B: Facebook Login data deletion request</h2>
+      <ol>
+        <li>Facebook app/website: <strong>Settings &amp; Privacy &gt; Settings &gt; Apps and Websites &gt; Logged in with Facebook</strong>.</li>
+        <li>Piliin ang <strong>Cognify</strong> at i-<strong>Remove</strong>.</li>
+        <li>Mag-email ng request (Opsyon C) para burahin ang data sa aming database.</li>
+      </ol>
+
+      <h2 id="option-c">Opsyon C: Email request</h2>
+      <p>I-email ang opisyal na contact namin. Ilakip:</p>
+      <ul>
+        <li>Pangalan sa account at login email</li>
+        <li>Auth provider (Facebook, Google, o Email/Password)</li>
+        <li>Kung Facebook user: optional ang iyong <em>Facebook User ID</em> kung alam mo</li>
+      </ul>
+      <p>Template:</p>
+      <pre>Subject: Cognify Data Deletion Request
+Body:
+- Full name:
+- App login email:
+- Auth provider:
+- Karagdagang detalye (optional):</pre>
+      <p class="note">Target completion: sa loob ng <strong>30 araw</strong> mula pagtanggap ng kumpletong request.</p>
+
+      <div class="grid">
+        <div class="card">
+          <h2 id="scope">Saklaw ng pagbura</h2>
+          <ul>
+            <li>Account identifiers at auth links</li>
+            <li>User profile fields (hal. pangalan, edad kung ibinigay)</li>
+            <li>App data: progreso at stats ng laro</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h2 id="not-deleted">Hindi binubura</h2>
+          <ul>
+            <li>Data na kailangan ayon sa batas kung meron</li>
+            <li>Aggregated o anonymized analytics na hindi maiuugnay sa iyo</li>
+          </ul>
+        </div>
+      </div>
+
+      <h2 id="contact">Official contact</h2>
+      <p>Ipadala ang requests sa <a href="mailto:cognifyapp2025@gmail.com">cognifyapp2025@gmail.com</a>.</p>
+
+      <div class="card">
+        <span class="badge">Tandaan</span>
+        <ul>
+          <li>Ang pag-remove ng Cognify sa Facebook <em>Apps and Websites</em> ay hindi awtomatikong nagbubura ng data sa aming database. Gumamit ng Opsyon A o C.</li>
+          <li>Wala kaming automated “data deletion callback” endpoint sa ngayon.</li>
+        </ul>
+      </div>
+
+      <footer class="note">© 2025 Cognify</footer>
+    </main>
+  </div>
+</body>
+</html>
